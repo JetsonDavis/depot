@@ -15,14 +15,14 @@ Rails.application.configure do
       # port:                 465,
       # domain:               'very-advanced.com',
       # user_name:            'jeff@very-advanced.com,
-      # password:             'Plea$eLetMeIn2019',
+      # password:             '',
       # authentication:       'login',
       # enable_starttls_auto: true 
       # address:              'mail.very-advanced.com',
       # port:                 26,
       # domain:               'very-advanced.com',
       # user_name:            'jeff@very-advanced.com',
-      # password:             'Plea$eLetMeIn2019',
+      # password:             '',
       # authentication:       'login',
       # enable_starttls_auto: true
     }
