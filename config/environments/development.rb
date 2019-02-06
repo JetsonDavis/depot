@@ -1,6 +1,32 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  Depot::Application.configure do
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'gmail.com',
+      user_name:            'greenhalovapes@gmail.com',
+      password:             'Green$Halo123',
+      authentication:       :plain,
+      enable_starttls_auto: true 
+      # address:              'box899.bluehost.com',
+      # port:                 465,
+      # domain:               'very-advanced.com',
+      # user_name:            'jeff@very-advanced.com,
+      # password:             'Plea$eLetMeIn2019',
+      # authentication:       'login',
+      # enable_starttls_auto: true 
+      # address:              'mail.very-advanced.com',
+      # port:                 26,
+      # domain:               'very-advanced.com',
+      # user_name:            'jeff@very-advanced.com',
+      # password:             'Plea$eLetMeIn2019',
+      # authentication:       'login',
+      # enable_starttls_auto: true
+    }
+  end
   config.action_cable.disable_request_forgery_protection = true
 
   # In the development environment your application's code is reloaded on
